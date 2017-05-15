@@ -1,0 +1,176 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Calibri;
+}
+
+.campos {
+  background-color: #e0e2ff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  border-width: thin;
+  height: 18px;
+  font-size: 16px;
+}
+
+.paragrafos {
+  text-align: justify;
+  margin-top: -5px;
+}
+
+#cabecalho {
+  width: 96%;
+  margin-left: 1%;
+}
+
+#tabelacabecalho {
+  width: 100%;
+}
+
+#celulalogo {
+  width: 15%;
+}
+
+#celulalogo img {
+  width: 100%;
+}
+
+#tabelacabecalho p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#paragrafo1 {
+  margin-left: 2%;
+  width: 93%;
+  line-height: 150%;
+}
+
+input[name="nome"] {
+  width: 95%;
+}
+
+#opcoes {
+  margin-left: 2%;
+  font-weight: bold;
+}
+
+#seaplicavel {
+  color: red;
+}
+
+#paragrafo2 {
+  width: 93%;
+  margin-left: 2%;
+}
+
+#paragrafo3 {
+  margin-left: 2%;
+  width: 93%;
+}
+
+#itensapreencher {
+  margin-left: 2%;
+  width: 93%;
+}
+
+#observacoes {
+  margin-left: 2%;
+  width: 93%;
+}
+
+#observacoes p {
+  margin-top: -5px;
+  line-height: 16px;
+}
+
+#paragrafo4 {
+  margin-left: 2%;
+  width: 93%;
+}
+
+#paragrafo5 {
+  width: 93%;
+  margin-left: 2%;
+}
+
+#localdata {
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+}
+
+#local {
+  width: 26%;
+  margin-right: 0.5%;
+  text-align: center;
+}
+
+#data {
+  width: 26%;
+  position: static;
+  text-align: center;
+}
+
+#labellocal {
+  display: block;
+}
+
+#labeldata {
+  display: inline;
+}
+
+#obsassinatura {
+  width: 93%;
+  margin-top: 3%;
+  margin-left: 2%;
+  display: none;
+}
+
+#obsassinatura p {
+  text-align: center;
+  color: gray;
+  font-size: 12px;
+}
+
+#assinatura {
+  width: 50%;
+  text-align: center;
+  position: static;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+  display: none;
+}
+
+#inputassinatura {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#ouvidoria {
+  width: 100%;
+  text-align: center;
+}
+
+#ouvidoria p {
+  font-weight: bolder;
+  font-size: 13px;
+}
+
+#imprimir {
+  width: 400px;
+  height: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  border-color: red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

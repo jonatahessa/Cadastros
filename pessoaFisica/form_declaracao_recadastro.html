@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Declaração de Recadastramento</title>
+    <link rel="stylesheet" href="estiloDeclaracaoRecadastro.css">
+    <script type="text/javascript" src="domRecadastro.js"></script>
+  </head>
+  <body>
+    <div id="cabecalho">
+      <table id="tabelacabecalho">
+        <td id="celulalogo"><img src="_imagens/logo_33_lerosa.png"></td>
+        <td><p>DECLARAÇÃO DE RECADASTRAMENTO - PESSOA FÍSICA</p></td>
+      </table>
+    </div>
+
+    <form>
+      <p id="paragrafo1" class="paragrafos">Eu <input class="campos" type="text" name="nome"/> portador do RG n° <input class="campos" type="text" name="rg"/>, e CPF/MF n° <input class="campos" type="text" name="cpf" onkeypress="mascara(this, '###.###.###.##')" maxlength="14"/>devidamente qualificado(a) na Ficha Cadastral, declaro para fins de recadastramento e atendimento aos normativos em vigor, que recebi da Lerosa S/A Corretora de Valores e Câmbio por <label>e-mail<input type="checkbox" name="email"/></label> ou <label>pessoalmente<input type="checkbox" name="pessoalmente"/></label>, as informações constantes dos documentos abaixo e que as indicadas com "X" <b>permanecem inalteradas:</b></p>
+
+      <div id="opcoes">
+        <p><label class="opcoes"><input type="checkbox" name="fichacadastral">Ficha Cadastral</label></p>
+        <p><label class="opcoes"><input type="checkbox" name="sfp">Situação Financeira e Patrimonial - SFP</label></p>
+        <p><label class="opcoes"><input type="checkbox" name="procurador">Ficha de Nomeação de Procurador <span id="seaplicavel">(se aplicável)</span></label></p>
+      </div>
+
+      <div id="paragrafo2" class="paragrafos">
+        <p>Para <b>alteração das informações constantes dos documentos não indicados acima com "X"</b>, favor efetuar <i>download</i> dos documentos no site <a href="http://www.lerosa.com.br/abra-sua-conta.php" target="_blank">(www.lerosa.com.br/abra-sua-conta.php).</a></p>
+      </div>
+
+      <div id="paragrafo3" class="paragrafos">
+        <p>Em atendimento às exigências normativas, <b>adicionalmente</b> é obrigatório efetuar o download dos documentos abaixo, disponíveis também no referido endereço, preencher, assinar e enviar para a área de Cadastro da Lerosa:</p>
+      </div>
+
+      <div id="itensapreencher">
+        <ul>
+          <li>Termo de Adesão aos Contratos</li>
+          <li>Suitability - Análise de Perfil do Investidor</li>
+        </ul>
+      </div>
+
+      <div id="observacoes" class="paragrafos">
+        <p>Observações:</p>
+        <p>1) Esses documentos podem ser enviados para o e-mail (recadastro@lerosa.com.br) desde que o email de origem seja obrigatoriamente o mesmo constante na ficha cadastral disponível nesta Corretora.</p>
+        <p>2) Caso tenha alterado o endereço, enviar respectivo comprovante.</p>
+      </div>
+
+      <div id="paragrafo4" class="paragrafos">
+        Conforme a Legislação, esta declaração é válida no prazo máximo de 24 meses, a contar da assinatura deste instrumento, e o Cliente é responsável por informar no prazo de 10 dias quaisquer alterações que vierem a ocorrer nos dados cadastrais.
+      </div>
+
+      <div id="paragrafo5" class="paragrafos">
+        <p>Declaro ainda que o propósito e a natureza da relação do negócio com a Lerosa consistem na continuidade e/ou possibilidade de operar nos mercados de renda variável, derivativos, renda fixa e câmbio, mas não obrigatoriamente em todos os segmentos.</p>
+      </div>
+
+      <div id="localdata">
+        <input id="local" class="campos" type="text" name="local"/></input>
+        <input id="data" maxlength="10" class="campos" type="text" name="data" maxlength="10" onkeypress="mascara(this, '##/##/####')"/></input>
+        <label id="labellocal" for="localdata">Local <span id="labeldata"/>e Data</span></label>
+      </div>
+
+      <div id="obsassinatura">
+        <p class="paragrafos">Assinatura do Cliente/ Representante(s) Legal(is) semelhante ao doc de identificação ou com reconhecimento de firma</p>
+      </div>
+
+      <div id="assinatura">
+        <label><input id="inputassinatura" class="campos" type="text" name="ass"/>Assinatura</label>
+      </div>
+
+      <div id="botao">
+        <button id="imprimir" type="button" name="button">Imprimir</button>
+      </div>
+
+      <div id="ouvidoria">
+        <p>Ouvidoria: 0800.727.7791</p>
+      </div>
+
+    </form>
+
+  </body>
+</html>

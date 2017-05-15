@@ -1,0 +1,826 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: 0.5%;
+}
+
+tr {
+  text-align: center;
+}
+
+caption {
+  border: 1px solid black;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+.campos {
+  background-color: #e0e2ff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  border-width: thin;
+  height: 15px;
+  font-size: 12px;
+}
+
+.camposemblock {
+  display: block;
+}
+
+.campostable {
+  background-color: #e0e2ff;
+  border: none;
+  height: 13px;
+  font-size: 8px;
+  width: 100%;
+}
+
+.camposcabecalho {
+  background-color: #e0e2ff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  border-width: thin;
+  height: 13px;
+  width: 45%;
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.consulta {
+  margin-top: 1%;
+}
+
+.formulario {
+  font-size: 11px;
+  font-family: Arial;
+  position: static;
+}
+
+.contapropria {
+  margin-top: 1px;
+}
+
+.camposindicados {
+  height: 13px;
+}
+
+#cabecalho {
+  font-family: Calibri;
+  width: 96%;
+  margin-left: 1%;
+}
+
+#fichacadastral {
+  width: 20%;
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#logo {
+  width: 11%;
+  align: center;
+}
+
+#logocabecalho {
+  width: 100%;
+}
+
+#dadoslerosa {
+  width: 28%;
+  font-size: 11px;
+  text-align: left;
+  line-height: 12px;
+  padding-left: 1%;
+}
+
+#celulacampos {
+  width: 18%;
+  font-size: 10px;
+  align-items: center;
+}
+
+#nomecompleto {
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 5px;
+}
+
+#camponomecompleto {
+  width: 100%;
+  margin-top: 3px;
+}
+
+#emailprincipal {
+  margin-left: 2%;
+  width: 46%;
+  float: left;
+  margin-top: 5px;
+}
+
+#campoemailprincipal {
+  width: 100%;
+}
+
+#emailsecundario {
+  margin-left: 1%;
+  width: 46%;
+  float: left;
+  margin-top: 5px;
+}
+
+#campoemailsecundario {
+  width: 100%;
+}
+
+#telefonecelular {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 31%;
+  float: left;
+}
+
+#campotelefonecelular {
+  width: 100%;
+}
+
+#telefoneresidencial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 30%;
+  float: left;
+}
+
+#campotelefoneresidencial {
+  width: 100%;
+}
+
+#telefonecomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 30%;
+  float: left;
+}
+
+#campotelefonecomercial {
+  width: 100%;
+}
+
+#datanasc {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 19%;
+  float: left;
+}
+
+#campodatanasc {
+  width: 100%;
+}
+
+#localnasc {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 25%;
+  float: left;
+}
+
+#campolocalnasc {
+  width: 100%;
+}
+
+#estadonasc {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 10%;
+  float: left;
+}
+
+#selectestadonasc {
+  width: 100%;
+  height: 18px;
+}
+
+#nacionalidade {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 20%;
+  float: left;
+}
+
+#camponacionalidade {
+  width: 100%;
+}
+
+#sexo {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 15%;
+  float: left;
+}
+
+#selectsexo {
+  width: 100%;
+  height: 18px;
+}
+
+#estadocivil {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 35%;
+  float: left;
+}
+
+#selectestadocivil {
+  width: 100%;
+  height: 18px;
+}
+
+#regimedebens {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 30%;
+  float: left;
+}
+
+#selectregimedebens {
+  width: 100%;
+  height: 18px;
+}
+
+#profissao {
+  margin-top: 5px;
+  margin-left: 1%;
+  margin-bottom: 1px;
+  width: 26%;
+  float: left;
+}
+
+#campoprofissao {
+  width: 100%;
+}
+
+#cpf {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 16%;
+  float: left;
+  position: relative;
+}
+
+#campocpf {
+  width: 100%;
+}
+
+#tipodoc {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 26%;
+  float: left;
+}
+
+#selecttipodoc {
+  width: 100%;
+  height: 18px;
+  font-size: 9px;
+}
+
+#numdoc {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 15%;
+  float: left;
+}
+
+#camponumdoc {
+  width: 100%;
+}
+
+#dataemissao {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 11%;
+  float: left;
+}
+
+#campodatadeemissao {
+  width: 100%;
+}
+
+#orgaoemissor {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 13%;
+  float: left;
+}
+
+#campoorgaoemissor {
+  width: 100%;
+}
+
+#ufemissor {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 7%;
+  float: left;
+}
+
+#selectufemissor {
+  width: 100%;
+  height: 18px;
+}
+
+#enderecoresidencia {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 60%;
+  float: left;
+}
+
+#campoenderecoresidencia {
+  width: 100%;
+}
+
+#numeroresidencia {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 8%;
+  float: left;
+}
+
+#camponumeroresidencia {
+  width: 100%;
+}
+
+#complementoresidencia {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 23%;
+  float: left;
+}
+
+#campocomplementoresidencia {
+  width: 100%;
+}
+
+#cepresidencia {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 16%;
+  float: left;
+}
+
+#campocepresidencia {
+  width: 100%;
+}
+
+#bairroresidencia {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 41%;
+  float: left;
+}
+
+#campobairroresidencia {
+  width: 100%;
+}
+
+#cidaderesidencia {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 25%;
+  float: left;
+}
+
+#campocidaderesidencia {
+  width: 100%;
+}
+
+#estadoresidencia {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 8%;
+  float: left;
+}
+
+#selectestadoresidencia {
+  width: 100%;
+  height: 18px;
+}
+
+#nomeconjuge {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 93%;
+  float: left;
+}
+
+#camponomeconjuge {
+  width: 100%;
+}
+
+#nomedamae {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 93%;
+  float: left;
+}
+
+#camponomedamae {
+  width: 100%;
+}
+
+#nomedopai {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 93%;
+  float: left;
+}
+
+#camponomedopai {
+  width: 100%;
+}
+
+#instituicao {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 93%;
+  float: left;
+}
+
+#campoinstituicao {
+  width: 100%;
+}
+
+#enderecocomercial {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 60%;
+  float: left;
+}
+
+#campoenderecocomercial {
+  width: 100%;
+}
+
+#numerocomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 8%;
+  float: left;
+}
+
+#camponumerocomercial {
+  width: 100%;
+}
+
+#complementocomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 23%;
+  float: left;
+}
+
+#campocomplementocomercial {
+  width: 100%;
+}
+
+#cepcomercial {
+  margin-top: 5px;
+  margin-left: 2%;
+  width: 16%;
+  float: left;
+}
+
+#campocepcomercial {
+  width: 100%;
+}
+
+#bairrocomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 41%;
+  float: left;
+}
+
+#campobairrocomercial {
+  width: 100%;
+}
+
+#cidadecomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 25%;
+  float: left;
+}
+
+#campocidadecomercial {
+  width: 100%;
+}
+
+#estadocomercial {
+  margin-top: 5px;
+  margin-left: 1%;
+  width: 8%;
+  float: left;
+}
+
+#selectestadocomercial {
+  width: 100%;
+  height: 18px;
+}
+
+#fonteconsulta {
+  width: 93%;
+  height: 30px;
+  margin-left: 2%;
+  margin-top: 1%;
+  border: 1px solid black;
+  float: left;
+  margin-bottom: 1%;
+  font-size: 10px;
+}
+
+#labelconsulta {
+  margin-left: 1%;
+  margin-right: 3%;
+  margin-top: 1.4%;
+  float: left;
+}
+
+#contasbancarias {
+  width: 93.2%;
+  margin-left: 1.5%;
+}
+
+#tabelacontas {
+  width: 100%;
+}
+
+#celulabanco {
+  width: 20%;
+  font-size: 10px;
+}
+
+#celulaagencia {
+  width: 10%;
+  font-size: 10px;
+}
+
+#celulaconta {
+  width: 10%;
+  font-size: 10px;
+}
+
+#celulatipo {
+  width: 14%;
+  font-size: 10px;
+}
+
+#celulaconjunta {
+  font-size: 10px;
+}
+
+#celulasegundotitular {
+  font-size: 10px;
+}
+
+#celulacpf {
+  width: 15%;
+  font-size: 10px;
+}
+
+#obs1 {
+  margin-left: 2%;
+  margin-bottom: -10px;
+}
+
+#obs2 {
+  margin-left: 6%;
+}
+
+#opcaocorrespondencia {
+  margin-left: 2%;
+  margin-top: -5px;
+  height: 45px;
+  width: 93%;
+  border: 1px solid black;
+}
+
+#paragrafoopcao {
+  margin-top: 0.5%;
+  margin-bottom: 1px;
+  margin-left: 1%;
+}
+
+#labelcheckcomercial {
+  margin-left: 1%;
+}
+
+
+#inputdiscriminacao {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#contapropria {
+  width: 93%;
+  margin-left: 2%;
+}
+
+#paragrafocontapropria {
+  float: left;
+  margin-right: 20px;
+}
+
+#checksim {
+  margin-top: 19px;
+}
+
+#autorizatransmissao {
+  width: 93%;
+  margin-top: -20px;
+  margin-left: 2%;
+  float: left;
+}
+
+#item3 {
+  margin-bottom: -2px;
+}
+
+#assinatura {
+  width: 93%;
+  margin-left: 2%;
+  margin-bottom: 45px;
+  margin-top: 55px;
+}
+
+#inputassinatura {
+  width: 80%;
+}
+
+#cabecalho2 {
+  width: 96%;
+}
+
+#tabelacabecalho2 {
+  width: 100%;
+}
+
+#logo2 {
+  width: 14%;
+}
+
+#dadoslerosa2 {
+  text-align: left;
+
+}
+
+#paragrafodados2 {
+  margin-left: 1%;
+  font-size: 11px;
+  margin-top: -5px
+  line-height: 13px;
+  font-family: Calibri;
+}
+
+#declaracoesdocliente {
+  font-size: 20px;
+  font-family: Calibri;
+  font-weight: bold;
+  width: 50%;
+}
+
+#pessoasindicadas {
+  margin-top: -5px;
+  width: 93%;
+  margin-left: 2%;
+  margin-bottom: 10px;
+}
+
+#tabelapessoas {
+  width: 100%;
+}
+
+.termos {
+  margin-left: 2%;
+  margin-top: -10px;
+  line-height: 13px;
+  font-size: 9px;
+}
+
+#assinaturacliente {
+  width: 50%;
+  margin-left: 2%;
+  float: left;
+}
+
+#assinatura2 {
+  width: 100%;
+}
+
+#local {
+  margin-left: 1%;
+  width: 30%;
+  float: left;
+}
+
+#campolocal {
+  width: 100%;
+}
+
+#data {
+  margin-left: 1%;
+  width: 13%;
+  float: left;
+}
+
+#campodata {
+  width: 100%;
+}
+
+#exclusivo {
+  margin-left: 2%;
+  width: 93%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#responsabiliza {
+  width: 100%;
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: -10;
+}
+
+#assinaturacadastrante {
+  width: 50%;
+  margin-left: 2%;
+  float: left;
+}
+
+#campocadastrante {
+  width: 100%;
+}
+
+#localcadastro {
+  margin-left: 1%;
+  width: 30%;
+  float: left;
+}
+
+#campolocalcadastro {
+  width: 100%;
+}
+
+#datacadastro {
+  margin-left: 1%;
+  width: 13%;
+  float: left;
+}
+
+#campodatacadastro {
+  width: 100%;
+}
+
+#botao {
+  width: 100%;
+  height: 200px;
+}
+
+#imprimir {
+  display: none;
+}
+
+#confirma {
+  width: 400px;
+  height: 100px;
+  font-size: 25px;
+  font-weight: bold;
+  border-color: red;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  margin: auto;
+}
