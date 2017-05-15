@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ficha Cadastral Pessoa Jurídica</title>
+  </head>
+  <body>
+    <table id="cabecalho">
+      <tr>
+        <td><img src="_imagens/logo_33_lerosa.png"></td>
+        <td><p>Lerosa S/A Corretora de Valores e Câmbio<br/>
+          Av. Presidente Juscelino Kubitschek, 50, 2º andar<br/>
+          Itaim Bibi - São Paulo - SP <br/>
+          <a href="http://www.lerosa.com.br" target="_blank">www.lerosa.com.br</a><br/>
+          Ouvidoria 0800 727 791 <br/>
+          Tel: 3513 - 6600 Fax: 3513 - 6601 <br/>
+          e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></p></td>
+          <td>FICHA CADASTRAL PESSOA JURÍDICA</td>
+          <td id="celulacampos">
+            <p><label for="codbolsa">Código Bolsa:</label>
+            <input class="camposcabecalho" type="text" name="codbolsa"/></p>
+            <p><label for="assessor">Assessor:</label>
+            <input class="camposcabecalho"type="text" name="assessor"/></p>
+            <p><label for="proxrecad">Prox. Recad:</label>
+            <input class="camposcabecalho" type="text" name="proxrecad" onkeypress="mascara(this, '##/##/####');" maxlength="10"/></p></td>
+        </tr>
+    </table>
+
+    <div id="qualificacao">
+      <p>QUALIFICAÇÃO DO CLIENTE</p>
+    </div>
+
+    <div id="razaosocial">
+      <label>Razão Social/Nome Empresarial completo (sem abreviações)<input type="text" name="razaosocial"></label>
+    </div>
+
+    <div id="cnpj">
+      <label>CNPJ/MF<input type="text" name="cnpj"></label>
+    </div>
+
+    <div id="finslucrativos">
+      <p>Fins Lucrativos: <label><input type="radio" name="fins">Sim</label><label><input type="radio" name="fins">Não</label></p>
+    </div>
+
+    <div id="isentoir">
+      <p>Isento IR: <label><input type="radio" name="isento">Sim</label><label><input type="radio" name="isento">Não</label></p>
+    </div>
+
+    <div id="nomefantasia">
+      <label>Nome Fantasia<input type="text" name="fantasia"></label>
+    </div>
+
+    <div id="nire">
+      <label>NIRE (Junta Comercial)<input type="text" name="nire"></label>
+    </div>
+
+    <div id="atividade">
+      <label>Atividade Principal Desenvolvida (Objeto Social)<input type="text" name="atividade"></label>
+    </div>
+
+    <div id="formacontituicao">
+      <label>Forma de constituição</label>
+      <select name="constituicao">
+        <option value=""></option>
+        <option value="empresapublica">Empresa Pública</option>
+        <option value="fundoinvestimentoimobiliario">Fundo de Investimento Imobiliário</option>
+        <option value="condominio">Condomínio</option>
+        <option value="cooperativa">Cooperativa</option>
+        <option value="consorcio">Consórcio</option>
+        <option value="caraterfilantropico">Instituição de caráter filantrópico</option>
+        <option value="bancocomercialmultiplo">Banco comercial / múltiplo</option>
+        <option value="bancodeinvestimento">Banco de investimento</option>
+        <option value="sociedadeseguroprevidenciacaptalizacao">Sociedade de seguro, previdência e capitalização</option>
+        <option value="sociedadefinanceiracreditoimobiliario">Sociedade financeira e de credito imobiliário</option>
+        <option value="sociedadearrendamentomercantil">Sociedade de arrendamento mercantil (leasing)</option>
+        <option value="fundoinvestimento">Fundo de investimento</option>
+        <option value="fundoprevidenciaprivadaaberto">Fundo de previdência privada (inclusive FAPI) aberto</option>
+        <option value="fundoprevidenciaprivadafechado">Fundo de previdência privada (inclusive FAPI) fechado</option>
+        <option value="clubeinvestimento">Clube de investimento</option>
+        <option value="partidopolitico">Partido político e suas fundações</option>
+        <option value="entidade">Entidade</option>
+        <option value="temploculto">Templo de qualquer culto</option>
+        <option value="uniaoestadomunicipio">União, estado, municipio ou distrito federal</option>
+        <option value="autarquia">Autarquia ou fundação instituída e mantida pelo poder público</option>
+        <option value="depositarioadr">Depositário de ADR</option>
+        <option value="instituicaoeducacao">Instituição de educação e assistência social</option>
+        <option value="sociedadeeconomicamista">Sociedade de econimia mista anônima (S/A), LTDA</option>
+      </select>
+    </div>
+
+  </body>
+</html>
