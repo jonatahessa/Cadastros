@@ -5,7 +5,7 @@
     <title>Ficha Cadastral Pessoa Jurídica</title>
   </head>
   <body>
-    <table id="cabecalho">
+    <table border="1" id="cabecalho">
       <tr>
         <td><img src="_imagens/logo_33_lerosa.png"></td>
         <td><p>Lerosa S/A Corretora de Valores e Câmbio<br/>
@@ -26,41 +26,41 @@
         </tr>
     </table>
 
-    <div id="qualificacao">
+    <div class="titulos">
       <p>QUALIFICAÇÃO DO CLIENTE</p>
     </div>
 
     <div id="razaosocial">
-      <label>Razão Social/Nome Empresarial completo (sem abreviações)<input type="text" name="razaosocial"></label>
+      <label>Razão Social/Nome Empresarial completo (sem abreviações)<input class="campos" type="text" name="razaosocial"/></label>
     </div>
 
     <div id="cnpj">
-      <label>CNPJ/MF<input type="text" name="cnpj"></label>
+      <label>CNPJ/MF<input class="campos" type="text" name="cnpj"/></label>
     </div>
 
     <div id="finslucrativos">
-      <p>Fins Lucrativos: <label><input type="radio" name="fins">Sim</label><label><input type="radio" name="fins">Não</label></p>
+      <p>Fins Lucrativos: <label><input type="radio" name="fins"/>Sim</label><label><input type="radio" name="fins"/>Não</label></p>
     </div>
 
     <div id="isentoir">
-      <p>Isento IR: <label><input type="radio" name="isento">Sim</label><label><input type="radio" name="isento">Não</label></p>
+      <p>Isento IR: <label><input type="radio" name="isento">Sim</label><label><input type="radio" name="isento"/>Não</label></p>
     </div>
 
     <div id="nomefantasia">
-      <label>Nome Fantasia<input type="text" name="fantasia"></label>
+      <label>Nome Fantasia<input class="campos" type="text" name="fantasia"/></label>
     </div>
 
     <div id="nire">
-      <label>NIRE (Junta Comercial)<input type="text" name="nire"></label>
+      <label>NIRE (Junta Comercial)<input class="campos" type="text" name="nire"/></label>
     </div>
 
     <div id="atividade">
-      <label>Atividade Principal Desenvolvida (Objeto Social)<input type="text" name="atividade"></label>
+      <label>Atividade Principal Desenvolvida (Objeto Social)<input class="campos" type="text" name="atividade"/></label>
     </div>
 
     <div id="formacontituicao">
       <label>Forma de constituição</label>
-      <select name="constituicao">
+      <select id="selectconstituicao" class="campos selects" name="constituicao">
         <option value=""></option>
         <option value="empresapublica">Empresa Pública</option>
         <option value="fundoinvestimentoimobiliario">Fundo de Investimento Imobiliário</option>
@@ -80,13 +80,384 @@
         <option value="partidopolitico">Partido político e suas fundações</option>
         <option value="entidade">Entidade</option>
         <option value="temploculto">Templo de qualquer culto</option>
-        <option value="uniaoestadomunicipio">União, estado, municipio ou distrito federal</option>
-        <option value="autarquia">Autarquia ou fundação instituída e mantida pelo poder público</option>
+        <option value="uniaoestadomunicipio">União, estado, municipio ou distrito federal, autarquia ou fundação instituída e mantida pelo poder público</option>
         <option value="depositarioadr">Depositário de ADR</option>
         <option value="instituicaoeducacao">Instituição de educação e assistência social</option>
         <option value="sociedadeeconomicamista">Sociedade de econimia mista anônima (S/A), LTDA</option>
       </select>
     </div>
 
+    <div id="datacontituicao">
+      <label>Data de Constituição<input id="inputdataconstituicao" class="campos" type="text" name="datacontituicao"/></label>
+    </div>
+
+    <div class="titulos">
+      <p>ENDEREÇO COMPLETO</p>
+    </div>
+
+    <div id="logradouro">
+      <label>Logradouro<input id="inputlogradouro" class="campos" type="text" name="logradouro"/></label>
+    </div>
+
+    <div id="numero">
+      <label>Número<input id="inputnumero" class="campos" type="text" name="numero"/></label>
+    </div>
+
+    <div id="complemento">
+      <label>Complemento<input id="inputcomplemento" class="campos" type="text" name="complemento"/></label>
+    </div>
+
+    <div id="cep">
+      <label>CEP<input id="inputcep" class="campos" type="text" name="cep"/></label>
+    </div>
+
+    <div id="bairro">
+      <label>Bairro<input id="inputbairro" class="campos" type="text" name="bairro"/></label>
+    </div>
+
+    <div id="cidade">
+      <label>Cidade<input id="inputcidade" class="campos" type="text" name="cidade"/></label>
+    </div>
+
+    <div id="estado">
+      <label>Estado</label>
+        <select id="selectestadocomercial" class="campos selects" name="estado">
+          <option value=""></option>
+          <option value="AC">AC</option>
+          <option value="AL">AL</option>
+          <option value="AP">AP</option>
+          <option value="AM">AM</option>
+          <option value="BA">BA</option>
+          <option value="CE">CE</option>
+          <option value="DF">DF</option>
+          <option value="ES">ES</option>
+          <option value="GO">GO</option>
+          <option value="MA">MA</option>
+          <option value="MT">MT</option>
+          <option value="MS">MS</option>
+          <option value="MG">MG</option>
+          <option value="PA">PA</option>
+          <option value="PB">PB</option>
+          <option value="PR">PR</option>
+          <option value="PE">PE</option>
+          <option value="PI">PI</option>
+          <option value="RJ">RJ</option>
+          <option value="RN">RN</option>
+          <option value="RS">RS</option>
+          <option value="RO">RO</option>
+          <option value="RR">RR</option>
+          <option value="SC">SC</option>
+          <option value="SE">SE</option>
+          <option value="SP">SP</option>
+          <option value="TO">TO</option>
+        </select>
+    </div>
+
+    <div id="pessoacontato">
+      <label>Pessoa de contato para cadastro<input id="inputpessoacontato" class="campos" type="text" name="pessoacontato"/></label>
+    </div>
+
+    <div id="telefone">
+      <label>Telefone<input id="inputtelefone" class="campos" type="text" name="telefone"/></label>
+    </div>
+
+    <div id="fax">
+      <label>Fax (DDD+Número)<input id="inputfax" class="campos" type="text" name="fax"/></label>
+    </div>
+
+    <table id="sociosacionistas">
+      <caption><p>DADOS DOS REPRESENTANTES LEGAIS</p></caption>
+      <tr>
+        <th><p>Nome dos Controladores (sócios ou acionistas)</p></th>
+        <th><p>% do Capital</p></th>
+        <th><p>CPF / CNPJ/MF</p></th>
+      </tr>
+      <tr>
+          <td><input type="text" class="campos" name="nomecontrolador1"/></td>
+          <td><input type="text" class="campos" name="capitalcontrolador1"/></td>
+          <td><input type="text" class="campos" name="cpfcnpjcontrolador1"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomecontrolador2"/></td>
+          <td><input type="text" class="campos" name="capitalcontrolador2"/></td>
+          <td><input type="text" class="campos" name="cpfcnpjcontrolador2"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomecontrolador3"/></td>
+          <td><input type="text" class="campos" name="capitalcontrolador3"/></td>
+          <td><input type="text" class="campos" name="cpfcnpjcontrolador3"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomecontrolador4"/></td>
+          <td><input type="text" class="campos" name="capitalcontrolador4"/></td>
+          <td><input type="text" class="campos" name="cpfcnpjcontrolador4"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomecontrolador5"/></td>
+          <td><input type="text" class="campos" name="capitalcontrolador5"/></td>
+          <td><input type="text" class="campos" name="cpfcnpjcontrolador5"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomecontrolador6"/></td>
+          <td><input type="text" class="campos" name="capitalcontrolador6"/></td>
+          <td><input type="text" class="campos" name="cpfcnpjcontrolador6"/></td>
+      </tr>
+    </table>
+
+    <table id="admindiretores">
+      <tr>
+        <th><p>Nome dos Administradores/Diretores</p></th>
+        <th><p>Cargo/Função</p></th>
+        <th><p>CPF/MF</p></th>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomeadmin1"/></td>
+          <td><input type="text" class="campos" name="cargofuncao1"/></td>
+          <td><input type="text" class="campos" name="cpfadmin1"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomeadmin2"/></td>
+          <td><input type="text" class="campos" name="cargofuncao2"/></td>
+          <td><input type="text" class="campos" name="cpfadmin2"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomeadmin3"/></td>
+          <td><input type="text" class="campos" name="cargofuncao3"/></td>
+          <td><input type="text" class="campos" name="cpfadmin3"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomeadmin4"/></td>
+          <td><input type="text" class="campos" name="cargofuncao4"/></td>
+          <td><input type="text" class="campos" name="cpfadmin4"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomeadmin5"/></td>
+          <td><input type="text" class="campos" name="cargofuncao5"/></td>
+          <td><input type="text" class="campos" name="cpfadmin5"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomeadmin6"/></td>
+          <td><input type="text" class="campos" name="cargofuncao6"/></td>
+          <td><input type="text" class="campos" name="cpfadmin6"/></td>
+      </tr>
+    </table>
+
+    <table id="coligadas">
+      <tr>
+        <th><p>Nome das Controladoras / Controladas / Coligadas</p></th>
+        <th><p>% do Capital</p></th>
+        <th><p>CNPJ/MF</p></th>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomecoligada1"/></td>
+          <td><input type="text" class="campos" name="capitalcoligada1"/></td>
+          <td><input type="text" class="campos" name="cnpjcoligada1"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campos" name="nomecoligada2"/></td>
+          <td><input type="text" class="campos" name="capitalcoligada2"/></td>
+          <td><input type="text" class="campos" name="cnpjcoligada2"/></td>
+      </tr>
+    </table>
+
+    <table id="pessoasautorizadas">
+      <caption><p>PESSOAS AUTORIZADAS A EMITIR ORDENS</p></caption>
+      <tr>
+        <th><p>Nome</p></th>
+        <th><p>RG</p></th>
+        <th><p>CPF/MF</p></th>
+      </tr>
+
+      <tr>
+        <td><input type="text" class="campos" name="pessoautorizada1"/></td>
+        <td><input type="text" class="campos" name="rgpessoaautorizada1"/></td>
+        <td><input type="text" class="campos" name="cpfpessoaautorizada1"/></td>
+      </tr>
+
+      <tr>
+        <td><input type="text" class="campos" name="pessoautorizada2"/></td>
+        <td><input type="text" class="campos" name="rgpessoaautorizada2"/></td>
+        <td><input type="text" class="campos" name="cpfpessoaautorizada2"/></td>
+      </tr>
+
+      <tr>
+        <td><input type="text" class="campos" name="pessoautorizada3"/></td>
+        <td><input type="text" class="campos" name="rgpessoaautorizada3"/></td>
+        <td><input type="text" class="campos" name="cpfpessoaautorizada3"/></td>
+      </tr>
+
+      <tr>
+        <td><input type="text" class="campos" name="pessoautorizada4"/></td>
+        <td><input type="text" class="campos" name="rgpessoaautorizada4"/></td>
+        <td><input type="text" class="campos" name="cpfpessoaautorizada4"/></td>
+      </tr>
+
+      <tr>
+        <td><input type="text" class="campos" name="pessoautorizada5"/></td>
+        <td><input type="text" class="campos" name="rgpessoaautorizada5"/></td>
+        <td><input type="text" class="campos" name="cpfpessoaautorizada5"/></td>
+      </tr>
+
+      <tr>
+        <td><input type="text" class="campos" name="pessoautorizada6"/></td>
+        <td><input type="text" class="campos" name="rgpessoaautorizada6"/></td>
+        <td><input type="text" class="campos" name="cpfpessoaautorizada6"/></td>
+      </tr>
+
+      <tr>
+        <td><input type="text" class="campos" name="pessoautorizada7"/></td>
+        <td><input type="text" class="campos" name="rgpessoaautorizada7"/></td>
+        <td><input type="text" class="campos" name="cpfpessoaautorizada7"/></td>
+      </tr>
+    </table>
+
+    <div id="assinaturaspag1">
+      <input type="text" id="inputassinatura1pag1"class="campos"/>
+      <input type="text" id="inputassinatura2pag1"class="campos"/>
+    </div>
+
+    <div id="cabecalho2">
+      <table id="tabelacabecalho2"border="1">
+        <tr>
+          <td id="logo2"><img id="logocabecalho" src="_imagens/logo_33_lerosa.png"/></td>
+          <td id="dadoslerosa2"><p id="paragrafodados2">Lerosa S/A Corretora de Valores e Câmbio<br />
+            Av. Presidente Juscelino Kubitschek, 50, 2º andar<br />
+            Itaim Bibi - São Paulo - SP <br />
+            <a href="http://www.lerosa.com.br" target="_blank">www.lerosa.com.br</a><br />
+            Ouvidoria 0800 727 791 <br />
+            Tel: 3513 - 6600 Fax: 3513 - 6601 <br />
+            e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></p></td>
+            <td id="declaracoesdocliente"><p>FICHA CADASTRAL PESSOA JURÍDICA</p></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="opcaoenviofisico">
+      <p>Opção para Envio de Correspondência - Meio Físico</p>
+      <label>Endereço Sede<input type="checkbox" name="enderecosede"/></label>
+      <label><input type="text" name="enderecoopcional"/></label>
+    </div>
+
+    <table border="1" id="opcaoenvioeletronico">
+        <caption><p>Opção para Envio de Correspondência - Meio Eletrônico</p></caption>
+      <tr>
+        <td><p>Autorizo a LEROSA enviar por e-mail extratos e demais informações</p>
+        <p><label><input type="radio" name="autorizaemail" value="sim"/>Sim</label><label><input type="radio" name="autorizaemail" value="nao">Não</label></p></td>
+        <td><p>Receber Extrato</p>
+        <p><label><input type="radio" name="autorizaextrato" value="sim"/>Sim</label><label><input type="radio" name="autorizaextrato" value="nao">Não</label></p></td>
+        <td><p>Receber Informe de Rendimentos</p>
+        <p><label><input type="radio" name="autorizainforme" value="sim"/>Sim</label><label><input type="radio" name="autorizainforme" value="nao">Não</label></p></td>
+      </tr>
+    </table>
+
+    <table border="1" id="bancoscontasliquidacao">
+        <caption><p>BANCOS E CONTAS-CORRENTES PARA LIQUIDAÇÃO FINANCEIRA</p></caption>
+        <tr>
+          <th>Nome do Banco</th>
+          <th>N° Banco</th>
+          <th>N° Agência</th>
+          <th>N° Conta e Dígito</th>
+        </tr>
+        <tr>
+          <td><input type="text" class="campos" name="nomebanco1"/></td>
+          <td><input type="text" class="campos" name="numerobanco1"/></td>
+          <td><input type="text" class="campos" name="numeroagencia1"/></td>
+          <td><input type="text" class="campos" name="numeroconta1"/></td>
+        </tr>
+
+        <tr>
+          <td><input type="text" class="campos" name="nomebanco2"/></td>
+          <td><input type="text" class="campos" name="numerobanco2"/></td>
+          <td><input type="text" class="campos" name="numeroagencia2"/></td>
+          <td><input type="text" class="campos" name="numeroconta2"/></td>
+        </tr>
+
+        <tr>
+          <td><input type="text" class="campos" name="nomebanco3"/></td>
+          <td><input type="text" class="campos" name="numerobanco3"/></td>
+          <td><input type="text" class="campos" name="numeroagencia3"/></td>
+          <td><input type="text" class="campos" name="numeroconta3"/></td>
+        </tr>
+    </table>
+
+    <table border="1" id="situacaopatrimonial">
+      <caption><p>SITUAÇÃO PATRIMONIAL</p></caption>
+      <tr>
+        <th><p>Tipo</p></th>
+        <th><p>Valor Total</p></th>
+      </tr>
+      <tr>
+        <td><p>Patrimônio Líquido</p></td>
+        <td><input type="text" name="patimonioliquido"/></td>
+      </tr>
+      <tr>
+        <td><p>Capital Social</p></td>
+        <td><input type="text" name="capitalsocial"/></td>
+      </tr>
+      <tr>
+        <td><p>Faturamento Médio Mensal dos Últimos 12 Meses</p></td>
+        <td><input type="text" name="faturamentomensal"/></td>
+      </tr>
+    </table>
+
+    <div id="declaracoes">
+      <p>Declarações</p>
+        <ol>
+          <li>Operamos por conta Própria? <label><input type="radio" name="contapropria" value="sim"/>SIM</label><label><input type="radio" name="contapropria" value="nao">NÃO</label></li>
+          <li>Autorizamos a transmissão de ordens por procurador ou representante?<label><input type="radio" name="procurador" value="nao">NÃO</label><label><input type="radio" name="procurador" value="sim"/>SIM</label><b> (Se sim, preencher a ficha de identificação de procurador)</b>. Em caso de eventual revogação do mandato comprometo-me a informar à Corretora.</li>
+          <li>É pessoa vinculada à Corretora (conceito definido pela Instrução CVM n.º 505/11)? <label><input type="radio" name="vinculada" value="nao"/>NÃO</label><label><input type="radio" name="vinculada" value="sim"/>SIM</label></li>
+          <li><label><input type="radio" name="concorda" value="concordo"/>Concordamos</label><label><input type="radio" name="concorda" value="naoconcorda"/>Não Concordamos</label><label><input type="radio" name="concorda" value="sobconsulta">Concordamos sob consulta</label>, que a carteira própria da Corretora ou a carteira de pessoas a ela vinculadas possam atuar na contraparte das operações que ordeno.</li>
+          <li>São consideradas válidas as ordens transmitidas: <label><input type="radio" name="ordensvalidas" value="verbalescrito">Verbalmente e/ou por escrito;</label><label><input type="radio" name="ordensvalidas" value="verbal">Somente Verbalmente;</label><label><input type="radio" name="ordensvalidas" value="escrito">Somente por Escrito</label></li>
+          <li>Não estamos, nem os sócios, impedidos de operar no mercado de valores mobiliários.</li>
+          <li>Temos conhecimento do disposto na Instrução CVM n.º 301/99, 419/05 , 463/08 e 505/11, da Lei 9.613/98 e da Circular 3.461/09 (e posteriores alterações) do Banco Central do Brasil, das regras e parâmetros de atuação da Corretora, das normas referentes ao fundo de garantia das bolsas, e das normas operacionais editadas pelas bolsas e pela câmara de compensação e liquidação disponíveis nos respectivos sites.</li>
+          <li>Temos conhecimento de que as operações realizadas no sistema de negociação de títulos e valores mobiliários mantidos pela SOMA não contam com a proteção de fundo de garantia.</li>
+          <li>Estamos cientes de que não devemos entregar ou receber, por qualquer razão, numerário, títulos ou valores mobiliários, ou quaisquer outros valores por meio de Agente Autônomo de Investimentos ou de Prepostos da Corretora, bem como de que eles não poderão ser meus procuradores;</li>
+          <li>Autorizamos a Corretora, caso existam débitos pendentes em meu nome, a liquidar, em bolsa ou em câmaras de compensação e liquidação, os contratos, direitos e ativos, adquiridos por minha conta e ordem, bem como a executar bens e direitos dados em garantia de minhas operações ou que estejam em poder da Corretora, aplicando o produto da venda no pagamento dos débitos pendentes, independentemente de notificação judicial ou extrajudicial.</li>
+          <li>Mediante este documento, aderimos aos termos do contrato de prestação de serviços de Custódia Fungível de Ativos da CBLC, firmado por esta Corretora, outorgando à CBLC poderes para, na qualidade de proprietário fiduciário, transferir para seu nome, nas companhias emitentes, os ativos de minha propriedade.</li>
+
+        <div id="assinaturaspag2">
+          <input id="inputassinatura1pag2" type="text"/>
+          <input id="inputassinatura2pag2" type="text"/>
+        </div>
+
+        <div id="cabecalho3">
+          <table id="tabelacabecalho3" border="1">
+            <tr>
+              <td id="logo2"><img id="logocabecalho" src="_imagens/logo_33_lerosa.png"/></td>
+              <td id="dadoslerosa2"><p id="paragrafodados2">Lerosa S/A Corretora de Valores e Câmbio<br />
+              Av. Presidente Juscelino Kubitschek, 50, 2º andar<br />
+              Itaim Bibi - São Paulo - SP <br />
+              <a href="http://www.lerosa.com.br" target="_blank">www.lerosa.com.br</a><br />
+              Ouvidoria 0800 727 791 <br />
+              Tel: 3513 - 6600 Fax: 3513 - 6601 <br />
+              e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></p></td>
+              <td id="declaracoesdocliente"><p>FICHA CADASTRAL PESSOA JURIDICA</p></td>
+            </tr>
+          </table>
+        </div>
+      <li>Estamos cientes de que as conversas com a Corretora e seus profissionais, para tratar de quaisquer assuntos relativos às operações poderão ser gravadas, podendo o conteúdo ser usado como prova no esclarecimento de questões relacionadas à conta e às operações nesta Corretora;</li>
+      <li>São verdadeiras as informações fornecidas para o preenchimento deste cadastro, e comprometemo-nos a informar, no prazo de dez dias, quaisquer alterações que vierem a ocorrer nos meus dados cadastrais.</li>
+      <li>Em nossos quadros societários / funcionais <label><input type="radio" name="pessoaexposta" value="nao">não temos </label><label><input type="radio" name="pessoaexposta" value="sim">temos</label> (SÓCIOS, ADMINISTRADORES/PROCURADORES) pessoa politicamente exposta, tal como definido no artigo 1º, § 1º, da Resolução COAF nº 16/07, no artigo 3º, da Deliberação COREMEC nº 2/06 e no artigo 4º, da Circular BACEN nº 3.461/09 e posteriores alterações, ou seja: agente público que desempenha ou tenha desempenhado, nos últimos 5 (cinco) anos, no Brasil ou em países, territórios e dependências estrangeiras, cargos, empregos ou funções públicas relevantes; ou representante, familiar (parente na linha reta até o primeiro grau, cônjuge, companheiro(a) ou enteado(a)) ou estreito colaborador das pessoas mencionadas acima.</li>
+      <li>Temos conhecimento das normas de funcionamento do mercado de títulos e valores mobiliários, bem como conhecemos os riscos inerentes às aplicações nos mercados, decorrentes especialmente da utilização de instrumentos de derivativos financeiros, operações em bolsas de valores e de mercadorias, inclusive mercado à vista, BTC, de índices e de futuros, e de opções de ações ou commodities e mercado de câmbio, estando tais operações sujeitas a condições de mercado que poderão levar a possibilidade de ocorrência de patrimônio negativo, bem como, se for o caso, de eventual responsabilidade por consequentes aportes adicionais de recursos.</li>
+      <li>Declaramos que o propósito e a natureza da relação do negócio com a Lerosa consistem na possibilidade de operar nos mercados de renda variável, derivativos, renda fixa e câmbio, mas não obrigatoriamente em todos os segmentos.</li>
+    </ol>
+  </div>
+
+<div class="">
+
+</div>
   </body>
 </html>
