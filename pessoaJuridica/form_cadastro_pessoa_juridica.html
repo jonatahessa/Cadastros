@@ -2,20 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="estiloPessoaJuridica.css">
     <title>Ficha Cadastral Pessoa Jurídica</title>
   </head>
   <body>
-    <table border="1" id="cabecalho">
+    <table id="cabecalho" border="1" class="cabecalhos">
       <tr>
-        <td><img src="_imagens/logo_33_lerosa.png"></td>
-        <td><p>Lerosa S/A Corretora de Valores e Câmbio<br/>
+        <td id="logo"><img id="logocabecalho" src="_imagens/logo_33_lerosa.png"/></td>
+        <td id="dadoslerosa"><p id="paragrafodados">Lerosa S/A Corretora de Valores e Câmbio<br/>
           Av. Presidente Juscelino Kubitschek, 50, 2º andar<br/>
           Itaim Bibi - São Paulo - SP <br/>
           <a href="http://www.lerosa.com.br" target="_blank">www.lerosa.com.br</a><br/>
           Ouvidoria 0800 727 791 <br/>
           Tel: 3513 - 6600 Fax: 3513 - 6601 <br/>
           e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></p></td>
-          <td>FICHA CADASTRAL PESSOA JURÍDICA</td>
+          <td id="fichacadastral"><p>FICHA CADASTRAL
+            PESSOA FÍSICA</p></td>
           <td id="celulacampos">
             <p><label for="codbolsa">Código Bolsa:</label>
             <input class="camposcabecalho" type="text" name="codbolsa"/></p>
@@ -168,9 +170,9 @@
     <table id="sociosacionistas">
       <caption><p>DADOS DOS REPRESENTANTES LEGAIS</p></caption>
       <tr>
-        <th><p>Nome dos Controladores (sócios ou acionistas)</p></th>
-        <th><p>% do Capital</p></th>
-        <th><p>CPF / CNPJ/MF</p></th>
+        <th>Nome dos Controladores (sócios ou acionistas)</th>
+        <th>% do Capital</th>
+        <th>CPF / CNPJ/MF</th>
       </tr>
       <tr>
           <td><input type="text" class="campos" name="nomecontrolador1"/></td>
@@ -211,9 +213,9 @@
 
     <table id="admindiretores">
       <tr>
-        <th><p>Nome dos Administradores/Diretores</p></th>
-        <th><p>Cargo/Função</p></th>
-        <th><p>CPF/MF</p></th>
+        <th>Nome dos Administradores/Diretores</th>
+        <th>Cargo/Função</th>
+        <th>CPF/MF</th>
       </tr>
 
       <tr>
@@ -255,9 +257,9 @@
 
     <table id="coligadas">
       <tr>
-        <th><p>Nome das Controladoras / Controladas / Coligadas</p></th>
-        <th><p>% do Capital</p></th>
-        <th><p>CNPJ/MF</p></th>
+        <th>Nome das Controladoras / Controladas / Coligadas</th>
+        <th>% do Capital</th>
+        <th>CNPJ/MF</th>
       </tr>
 
       <tr>
@@ -276,9 +278,9 @@
     <table id="pessoasautorizadas">
       <caption><p>PESSOAS AUTORIZADAS A EMITIR ORDENS</p></caption>
       <tr>
-        <th><p>Nome</p></th>
-        <th><p>RG</p></th>
-        <th><p>CPF/MF</p></th>
+        <th>Nome</th>
+        <th>RG</th>
+        <th>CPF/MF</th>
       </tr>
 
       <tr>
@@ -329,8 +331,7 @@
       <input type="text" id="inputassinatura2pag1"class="campos"/>
     </div>
 
-    <div id="cabecalho2">
-      <table id="tabelacabecalho2"border="1">
+      <table id="cabecalho2" border="1" class="cabecalhos">
         <tr>
           <td id="logo2"><img id="logocabecalho" src="_imagens/logo_33_lerosa.png"/></td>
           <td id="dadoslerosa2"><p id="paragrafodados2">Lerosa S/A Corretora de Valores e Câmbio<br />
@@ -343,7 +344,6 @@
             <td id="declaracoesdocliente"><p>FICHA CADASTRAL PESSOA JURÍDICA</p></td>
         </tr>
       </table>
-    </div>
 
     <div id="opcaoenviofisico">
       <p>Opção para Envio de Correspondência - Meio Físico</p>
@@ -396,19 +396,19 @@
     <table border="1" id="situacaopatrimonial">
       <caption><p>SITUAÇÃO PATRIMONIAL</p></caption>
       <tr>
-        <th><p>Tipo</p></th>
-        <th><p>Valor Total</p></th>
+        <th>Tipo</th>
+        <th>Valor Total</th>
       </tr>
       <tr>
-        <td><p>Patrimônio Líquido</p></td>
+        <td>Patrimônio Líquido</td>
         <td><input type="text" name="patimonioliquido"/></td>
       </tr>
       <tr>
-        <td><p>Capital Social</p></td>
+        <td>Capital Social</td>
         <td><input type="text" name="capitalsocial"/></td>
       </tr>
       <tr>
-        <td><p>Faturamento Médio Mensal dos Últimos 12 Meses</p></td>
+        <td>Faturamento Médio Mensal dos Últimos 12 Meses</td>
         <td><input type="text" name="faturamentomensal"/></td>
       </tr>
     </table>
@@ -434,30 +434,75 @@
         </div>
 
         <div id="cabecalho3">
-          <table id="tabelacabecalho3" border="1">
+          <table id="tabelacabecalho3" border="1" class="cabecalhos">
             <tr>
               <td id="logo2"><img id="logocabecalho" src="_imagens/logo_33_lerosa.png"/></td>
-              <td id="dadoslerosa2"><p id="paragrafodados2">Lerosa S/A Corretora de Valores e Câmbio<br />
-              Av. Presidente Juscelino Kubitschek, 50, 2º andar<br />
-              Itaim Bibi - São Paulo - SP <br />
-              <a href="http://www.lerosa.com.br" target="_blank">www.lerosa.com.br</a><br />
-              Ouvidoria 0800 727 791 <br />
-              Tel: 3513 - 6600 Fax: 3513 - 6601 <br />
-              e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></p></td>
-              <td id="declaracoesdocliente"><p>FICHA CADASTRAL PESSOA JURIDICA</p></td>
-            </tr>
-          </table>
-        </div>
-      <li>Estamos cientes de que as conversas com a Corretora e seus profissionais, para tratar de quaisquer assuntos relativos às operações poderão ser gravadas, podendo o conteúdo ser usado como prova no esclarecimento de questões relacionadas à conta e às operações nesta Corretora;</li>
-      <li>São verdadeiras as informações fornecidas para o preenchimento deste cadastro, e comprometemo-nos a informar, no prazo de dez dias, quaisquer alterações que vierem a ocorrer nos meus dados cadastrais.</li>
-      <li>Em nossos quadros societários / funcionais <label><input type="radio" name="pessoaexposta" value="nao">não temos </label><label><input type="radio" name="pessoaexposta" value="sim">temos</label> (SÓCIOS, ADMINISTRADORES/PROCURADORES) pessoa politicamente exposta, tal como definido no artigo 1º, § 1º, da Resolução COAF nº 16/07, no artigo 3º, da Deliberação COREMEC nº 2/06 e no artigo 4º, da Circular BACEN nº 3.461/09 e posteriores alterações, ou seja: agente público que desempenha ou tenha desempenhado, nos últimos 5 (cinco) anos, no Brasil ou em países, territórios e dependências estrangeiras, cargos, empregos ou funções públicas relevantes; ou representante, familiar (parente na linha reta até o primeiro grau, cônjuge, companheiro(a) ou enteado(a)) ou estreito colaborador das pessoas mencionadas acima.</li>
-      <li>Temos conhecimento das normas de funcionamento do mercado de títulos e valores mobiliários, bem como conhecemos os riscos inerentes às aplicações nos mercados, decorrentes especialmente da utilização de instrumentos de derivativos financeiros, operações em bolsas de valores e de mercadorias, inclusive mercado à vista, BTC, de índices e de futuros, e de opções de ações ou commodities e mercado de câmbio, estando tais operações sujeitas a condições de mercado que poderão levar a possibilidade de ocorrência de patrimônio negativo, bem como, se for o caso, de eventual responsabilidade por consequentes aportes adicionais de recursos.</li>
-      <li>Declaramos que o propósito e a natureza da relação do negócio com a Lerosa consistem na possibilidade de operar nos mercados de renda variável, derivativos, renda fixa e câmbio, mas não obrigatoriamente em todos os segmentos.</li>
-    </ol>
-  </div>
+                <td id="dadoslerosa2"><p id="paragrafodados2">Lerosa S/A Corretora de Valores e Câmbio<br />
+                  Av. Presidente Juscelino Kubitschek, 50, 2º andar<br />
+                  Itaim Bibi - São Paulo - SP <br />
+                  <a href="http://www.lerosa.com.br" target="_blank">www.lerosa.com.br</a><br />
+                  Ouvidoria 0800 727 791 <br />
+                  Tel: 3513 - 6600 Fax: 3513 - 6601 <br />
+                  e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></p></td>
+                <td id="declaracoesdocliente"><p>FICHA CADASTRAL PESSOA JURIDICA</p></td>
+              </tr>
+            </table>
+          </div>
+        <li>Estamos cientes de que as conversas com a Corretora e seus profissionais, para tratar de quaisquer assuntos relativos às operações poderão ser gravadas, podendo o conteúdo ser usado como prova no esclarecimento de questões relacionadas à conta e às operações nesta Corretora;</li>
+        <li>São verdadeiras as informações fornecidas para o preenchimento deste cadastro, e comprometemo-nos a informar, no prazo de dez dias, quaisquer alterações que vierem a ocorrer nos meus dados cadastrais.</li>
+        <li>Em nossos quadros societários / funcionais <label><input type="radio" name="pessoaexposta" value="nao">não temos </label><label><input type="radio" name="pessoaexposta" value="sim">temos</label> (SÓCIOS, ADMINISTRADORES/PROCURADORES) pessoa politicamente exposta, tal como definido no artigo 1º, § 1º, da Resolução COAF nº 16/07, no artigo 3º, da Deliberação COREMEC nº 2/06 e no artigo 4º, da Circular BACEN nº 3.461/09 e posteriores alterações, ou seja: agente público que desempenha ou tenha desempenhado, nos últimos 5 (cinco) anos, no Brasil ou em países, territórios e dependências estrangeiras, cargos, empregos ou funções públicas relevantes; ou representante, familiar (parente na linha reta até o primeiro grau, cônjuge, companheiro(a) ou enteado(a)) ou estreito colaborador das pessoas mencionadas acima.</li>
+        <li>Temos conhecimento das normas de funcionamento do mercado de títulos e valores mobiliários, bem como conhecemos os riscos inerentes às aplicações nos mercados, decorrentes especialmente da utilização de instrumentos de derivativos financeiros, operações em bolsas de valores e de mercadorias, inclusive mercado à vista, BTC, de índices e de futuros, e de opções de ações ou commodities e mercado de câmbio, estando tais operações sujeitas a condições de mercado que poderão levar a possibilidade de ocorrência de patrimônio negativo, bem como, se for o caso, de eventual responsabilidade por consequentes aportes adicionais de recursos.</li>
+        <li>Declaramos que o propósito e a natureza da relação do negócio com a Lerosa consistem na possibilidade de operar nos mercados de renda variável, derivativos, renda fixa e câmbio, mas não obrigatoriamente em todos os segmentos.</li>
+      </ol>
+    </div>
 
-<div class="">
+    <div id="obsassinatura">
+      <p>Assinatura do Titular ou Representantes Legais, conforme representação perante terceiro prevista em Contrato/Estatuto Social.</p>
+    </div>
 
-</div>
+    <div id="local">
+      <label><input class="campos" id="inputlocal" type="text" name="local"/>Local</label>
+    </div>
+
+    <div id="data">
+      <label><input class="campos" id="inputdata" onkeypress="mascara(this, '##/##/####');" maxlength="10" type="text" name="data"/>Data</label>
+    </div>
+
+    <center id="assinaturas">
+      <label for="ass1">1.</label>
+      <input class="assinatura" type="text" name="ass1"/>
+      <label id="ass2" for="ass2">2.</label>
+      <input class="assinatura" type="text" name="ass2"/>
+    </center>
+
+    <div id="obs">
+      <p>Obs.: A Ficha cadastral deve ter anexa as cópias dos documentos:</p>
+      <ul>
+        <li>Estatuto Social/Contrato Social Atualizado (Autenticada)</li>
+        <li>Atos societários que indiquem os administradores da pessoa Jurídica (Autenticada)</li>
+        <li>Demonstrações Financeiras ou Balanço Patrimonial Atualizados (Simples)</li>
+      </ul>
+    </div>
+
+    <div id="usoexclusivo">
+      <p>PARA USO EXCLUSIVO DA LEROSA S/A CORRETORA DE VALORES E CÂMBIO DECLARAÇÃO DO RESPONSÁVEL PELO CADASTRAMENTO</p>
+    </div>
+
+    <div id="responsabiliza">
+      <p>"Responsabilizo-me pela exatidão das informações constantes da ficha, bem como pelos elementos de identificação e demais informações apresentadas”.</p>
+    </div>
+
+    <div id="assinaturalerosa">
+      <label><input type="text" name="assinaturalerosa" class="campos"/><b>Lerosa S/A Corretora de Valores e Câmbio</b><br/>Assinatura do responsável pelo cadastro</label>
+    </div>
+
+    <div id="local">
+      <label><input class="campos" id="inputlocal" type="text" name="local"/>Local</label>
+    </div>
+
+    <div id="data">
+      <label><input class="campos" id="inputdata" onkeypress="mascara(this, '##/##/####');" maxlength="10" type="text" name="data"/>Data</label>
+    </div>
+
   </body>
 </html>

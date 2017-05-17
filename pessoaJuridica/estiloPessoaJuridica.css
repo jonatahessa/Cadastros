@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+.campos {
+  background-color: #e0e2ff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  border-width: thin;
+  height: 15px;
+  font-size: 12px;
+}
+
+.cabecalhos {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: 0.5%;
+}
+
+#cabecalho {
+  font-family: Calibri;
+  width: 96%;
+  margin-left: 1%;
+}
+
+#logo {
+  width: 15%;
+}
+
+#logocabecalho {
+  width: 100%;
+}
