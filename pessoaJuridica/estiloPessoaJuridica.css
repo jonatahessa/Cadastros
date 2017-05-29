@@ -4,14 +4,14 @@ html, body {
   padding: 0;
 }
 
-select::-ms-expand {
+/*select::-ms-expand {
   display: none;
 }
 
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-}
+}*/
 
 
 .campos {
@@ -21,14 +21,75 @@ select {
   border-right: none;
   border-color: black;
   border-width: thin;
+  height: 25px;
+  font-size: 20px;
+}
+
+.selects {
+  height: 28px;
+}
+
+.camposcabecalho {
+  background-color: #e0e2ff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  border-width: thin;
+  width: 50%;
   height: 15px;
+  font-size: 10px;
+}
+
+.campostable {
+  background-color: #e0e2ff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: black;
+  border-width: thin;
+  height: 18px;
   font-size: 12px;
+  width: 100%;
 }
 
 .cabecalhos {
   border-collapse: collapse;
   border: 1px solid black;
   margin: 0.5%;
+}
+
+.titulos {
+  width: 96%;
+  height: 20px;
+  background-color: #c2c1c1;
+  margin-left: 1%;
+}
+
+.titulos p {
+  margin-left: 1%;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.inputscabecalho {
+  width: 100%;
+}
+
+#celulacampos label {
+  font-size: 12px;
+  margin-left: 1%;
+  text-align: right;
+}
+
+#camposcabecalho {
+  width: 70%;
+  margin-left: 3%;
+}
+
+#camposcabecalho p {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 #cabecalho {
@@ -43,4 +104,417 @@ select {
 
 #logocabecalho {
   width: 100%;
+}
+
+#paragrafodados {
+  margin-left: 2%;
+  font-size: 15px;
+}
+
+#fichacadastral {
+  text-align: center;
+}
+
+#corpo {
+  font-family: Calibri;
+  width: 100%;
+}
+
+#corpo label {
+  font-size: 16px;
+}
+
+#razaosocial {
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+#inputrazao {
+  display: block;
+  width: 100%;
+}
+
+#cnpj {
+  margin-top: 1%;
+  margin-left: 2%;
+  width: 30%;
+  float: left;
+}
+
+#inputcnpj {
+  width: 100%;
+}
+
+#finslucrativos {
+  margin-top: 1%;
+  margin-left: 2%;
+  width: 15%;
+  float: left;
+  margin-bottom: -1%;
+}
+
+#finslucrativos p {
+  margin-top: 2%;
+}
+
+#isentoir {
+  margin-top: 1%;
+  width: 15%;
+  margin-left: 1%;
+  float: left;
+  margin-bottom: -1%;
+}
+
+#isentoir p {
+  margin-top: 2%;
+}
+
+#nire {
+  float: left;
+  width: 29%;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+#inputnire {
+  width: 100%;
+}
+
+#nomefantasia {
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 1%;
+  float: left;
+}
+
+#inputfantasia {
+  width: 100%;
+}
+
+#atividade {
+  float: left;
+  width: 38%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+#atividade input {
+  width: 100%;
+}
+
+#formaconstituicao {
+  margin-top: 1%;
+  float: left;
+  width: 38%;
+  margin-left: 1%;
+}
+
+#selectconstituicao {
+  width: 100%;
+  font-size: 12px;
+}
+
+#dataconstituicao {
+  float: left;
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 15%;
+}
+
+#dataconstituicao input {
+  display: block;
+  width: 100%;
+}
+
+#tituloendereco {
+  margin-top: 2%;
+  position: static;
+  float: left;
+}
+
+#tituloendereco p {
+  margin-top: 0px;
+}
+
+#logradouro {
+  float: left;
+  margin-top: 1%;
+  margin-left: 2%;
+  width: 56%;
+}
+
+#inputlogradouro {
+  width: 100%;
+  display: block;
+}
+
+#numero {
+  float: left;
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 10%;
+}
+
+#inputnumero {
+  display: block;
+  width: 100%;
+}
+
+#complemento {
+  margin-top: 1%;
+  margin-left: 1%;
+  float: left;
+  width: 25%;
+}
+
+#inputcomplemento {
+  width: 100%;
+}
+
+#cep {
+  float: left;
+  margin-left: 2%;
+  margin-top: 1%;
+  width: 15%;
+}
+
+#inputcep {
+  width: 100%;
+}
+
+#bairro {
+  float: left;
+  margin-left: 1%;
+  margin-top: 1%;
+  width: 40%;
+}
+
+#inputbairro {
+  width: 100%;
+}
+
+#cidade {
+  float: left;
+  margin-left: 1%;
+  margin-top: 1%;
+  width: 20%;
+}
+
+#inputcidade {
+  width: 100%;
+}
+
+#estado {
+  float: left;
+  margin-left: 1%;
+  margin-top: 1%;
+  width: 15%;
+}
+
+#selectestadocomercial {
+  width: 100%;
+}
+
+#pessoacontato {
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 1%;
+  float: left;
+}
+
+#inputpessoacontato {
+  width: 100%;
+}
+
+#email {
+  width: 51%;
+  margin-left: 2%;
+  float: left;
+  margin-top: 1%;
+}
+
+#inputemail {
+  width: 100%;
+}
+
+#telefone {
+  width: 20%;
+  margin-left: 1%;
+  margin-top: 1%;
+  float: left;
+}
+
+#inputtelefone {
+  width: 100%;
+}
+
+#fax {
+  width: 20%;
+  margin-left: 1%;
+  margin-top: 1%;
+  float: left;
+}
+
+#inputfax {
+  width: 100%;
+}
+
+#titulorepresentantes {
+  margin-top: 2%;
+  position: static;
+  float: left;
+}
+
+#titulorepresentantes p {
+  margin-top: 0px;
+}
+
+#sociosacionistas {
+  width: 93%;
+  margin-left: 2%;
+  padding-top: 2%;
+}
+
+#tituloacionistas {
+  margin-top: 2%;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+#headcontroladores {
+  width: 60%;
+  text-align: left;
+}
+
+#headcapital {
+  width: 20%;
+}
+
+#headcpfcnpj {
+  width: 20%;
+}
+
+#admindiretores {
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+#headadmin {
+  width: 60%;
+  text-align: left;
+}
+
+#headcargo {
+  width: 20%;
+}
+
+#headcpfadmin {
+  width: 20%;
+}
+
+#coligadas {
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+#headnomecontroladoras {
+  width: 60%;
+  text-align: left;
+}
+
+#headcapitalcontroladoras {
+  width: 20%;
+}
+
+#headcnpjcontroladoras {
+  width: 20%;
+}
+
+#pessoasautorizadas {
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+#headnomepessoas {
+  width: 60%;
+  text-align: left;
+}
+
+#headrgpessoas {
+  width: 20%;
+}
+
+#headcpfpessoas {
+  width: 20%;
+}
+
+#assinaturaspag1 {
+  padding-top: 5%;
+  width: 80%;
+  height: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: static;
+  display: none;
+}
+
+#inputassinatura1pag1 {
+  width: 47%;
+}
+
+#inputassinatura2pag1 {
+  float: right;
+  width: 47%;
+}
+
+#tabelacabecalho2 {
+  margin-top: 4%;
+  width: 96%;
+  margin-left: 1%;
+  display: none;
+}
+
+#logo2 {
+  width: 15%;
+}
+
+#paragrafodados2 {
+  margin-left: 2%;
+  font-size: 15px;
+}
+
+#fichacadastral2 {
+  text-align: center;
+}
+
+#opcaoenviofisico {
+  border: 1px solid;
+  border-color: black;
+  width: 96%;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+#opcaoenviofisico p {
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+#labelenderecosede {
+  margin-left: 2%;
+}
+
+#labelenderecoopcional {
+  margin-left: 2%;
+}
+
+#inputenderecoopicional {
+  width: 60%;
+  margin-left: 1%;
+  margin-bottom: 1%;
 }

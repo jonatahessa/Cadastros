@@ -17,50 +17,54 @@
           Tel: 3513 - 6600 Fax: 3513 - 6601 <br/>
           e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></p></td>
           <td id="fichacadastral"><p>FICHA CADASTRAL
-            PESSOA FÍSICA</p></td>
+            PESSOA JURÍDICA</p></td>
           <td id="celulacampos">
+            <div id="camposcabecalho">
             <p><label for="codbolsa">Código Bolsa:</label>
-            <input class="camposcabecalho" type="text" name="codbolsa"/></p>
+            <input class="camposcabecalho inputscabecalho" type="text" name="codbolsa"/></p>
             <p><label for="assessor">Assessor:</label>
-            <input class="camposcabecalho"type="text" name="assessor"/></p>
+            <input class="camposcabecalho inputscabecalho"type="text" name="assessor"/></p>
             <p><label for="proxrecad">Prox. Recad:</label>
-            <input class="camposcabecalho" type="text" name="proxrecad" onkeypress="mascara(this, '##/##/####');" maxlength="10"/></p></td>
+            <input class="camposcabecalho inputscabecalho" type="text" name="proxrecad" onkeypress="mascara(this, '##/##/####');" maxlength="10"/></p></td>
+          </div>
         </tr>
     </table>
+
+    <section id="corpo">
 
     <div class="titulos">
       <p>QUALIFICAÇÃO DO CLIENTE</p>
     </div>
 
     <div id="razaosocial">
-      <label>Razão Social/Nome Empresarial completo (sem abreviações)<input class="campos" type="text" name="razaosocial"/></label>
+      <label>Razão Social / Nome Empresarial completo (sem abreviações)<input id="inputrazao" class="campos" type="text" name="razaosocial"/></label>
     </div>
 
     <div id="cnpj">
-      <label>CNPJ/MF<input class="campos" type="text" name="cnpj"/></label>
+      <label>CNPJ/MF<input id="inputcnpj" class="campos" type="text" name="cnpj"/></label>
     </div>
 
     <div id="finslucrativos">
-      <p>Fins Lucrativos: <label><input type="radio" name="fins"/>Sim</label><label><input type="radio" name="fins"/>Não</label></p>
+      <label>Fins Lucrativos:</label><p><label><input type="radio" name="fins"/>Sim</label><label><input type="radio" name="fins"/>Não</label></p>
     </div>
 
     <div id="isentoir">
-      <p>Isento IR: <label><input type="radio" name="isento">Sim</label><label><input type="radio" name="isento"/>Não</label></p>
-    </div>
-
-    <div id="nomefantasia">
-      <label>Nome Fantasia<input class="campos" type="text" name="fantasia"/></label>
+      <label>Isento IR:</label><p><label><input type="radio" name="isento">Sim</label><label><input type="radio" name="isento"/>Não</label></p>
     </div>
 
     <div id="nire">
-      <label>NIRE (Junta Comercial)<input class="campos" type="text" name="nire"/></label>
+      <label>NIRE (Junta Comercial)<input id="inputnire" class="campos" type="text" name="nire"/></label>
+    </div>
+
+    <div id="nomefantasia">
+      <label>Nome Fantasia<input id="inputfantasia" class="campos" type="text" name="fantasia"/></label>
     </div>
 
     <div id="atividade">
-      <label>Atividade Principal Desenvolvida (Objeto Social)<input class="campos" type="text" name="atividade"/></label>
+      <label>Atividade Principal Desenvolvida (Objeto Social)</label><input class="campos" type="text" name="atividade"/>
     </div>
 
-    <div id="formacontituicao">
+    <div id="formaconstituicao">
       <label>Forma de constituição</label>
       <select id="selectconstituicao" class="campos selects" name="constituicao">
         <option value=""></option>
@@ -89,11 +93,11 @@
       </select>
     </div>
 
-    <div id="datacontituicao">
+    <div id="dataconstituicao">
       <label>Data de Constituição<input id="inputdataconstituicao" class="campos" type="text" name="datacontituicao"/></label>
     </div>
 
-    <div class="titulos">
+    <div id="tituloendereco" class="titulos">
       <p>ENDEREÇO COMPLETO</p>
     </div>
 
@@ -159,6 +163,10 @@
       <label>Pessoa de contato para cadastro<input id="inputpessoacontato" class="campos" type="text" name="pessoacontato"/></label>
     </div>
 
+    <div id="email">
+      <label>E-mail - Endereço Eletrônico para Correspondência<input id="inputemail" class="campos" type="text" name="email" value=""></label>
+    </div>
+
     <div id="telefone">
       <label>Telefone<input id="inputtelefone" class="campos" type="text" name="telefone"/></label>
     </div>
@@ -167,171 +175,177 @@
       <label>Fax (DDD+Número)<input id="inputfax" class="campos" type="text" name="fax"/></label>
     </div>
 
+    <div id="titulorepresentantes" class="titulos">
+      <p>DADOS DOS REPRESENTANTES LEGAIS</p>
+    </div>
+
     <table id="sociosacionistas">
-      <caption><p>DADOS DOS REPRESENTANTES LEGAIS</p></caption>
       <tr>
-        <th>Nome dos Controladores (sócios ou acionistas)</th>
-        <th>% do Capital</th>
-        <th>CPF / CNPJ/MF</th>
+        <th id="headcontroladores">Nome dos Controladores (sócios ou acionistas)</th>
+        <th id="headcapital">% do Capital</th>
+        <th id="headcpfcnpj">CPF / CNPJ/MF</th>
       </tr>
       <tr>
-          <td><input type="text" class="campos" name="nomecontrolador1"/></td>
-          <td><input type="text" class="campos" name="capitalcontrolador1"/></td>
-          <td><input type="text" class="campos" name="cpfcnpjcontrolador1"/></td>
-      </tr>
-
-      <tr>
-          <td><input type="text" class="campos" name="nomecontrolador2"/></td>
-          <td><input type="text" class="campos" name="capitalcontrolador2"/></td>
-          <td><input type="text" class="campos" name="cpfcnpjcontrolador2"/></td>
+          <td><input type="text" class="campostable" name="nomecontrolador1"/></td>
+          <td><input type="text" class="campostable" name="capitalcontrolador1"/></td>
+          <td><input type="text" class="campostable" name="cpfcnpjcontrolador1"/></td>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomecontrolador3"/></td>
-          <td><input type="text" class="campos" name="capitalcontrolador3"/></td>
-          <td><input type="text" class="campos" name="cpfcnpjcontrolador3"/></td>
+          <td><input type="text" class="campostable" name="nomecontrolador2"/></td>
+          <td><input type="text" class="campostable" name="capitalcontrolador2"/></td>
+          <td><input type="text" class="campostable" name="cpfcnpjcontrolador2"/></td>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomecontrolador4"/></td>
-          <td><input type="text" class="campos" name="capitalcontrolador4"/></td>
-          <td><input type="text" class="campos" name="cpfcnpjcontrolador4"/></td>
+          <td><input type="text" class="campostable" name="nomecontrolador3"/></td>
+          <td><input type="text" class="campostable" name="capitalcontrolador3"/></td>
+          <td><input type="text" class="campostable" name="cpfcnpjcontrolador3"/></td>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomecontrolador5"/></td>
-          <td><input type="text" class="campos" name="capitalcontrolador5"/></td>
-          <td><input type="text" class="campos" name="cpfcnpjcontrolador5"/></td>
+          <td><input type="text" class="campostable" name="nomecontrolador4"/></td>
+          <td><input type="text" class="campostable" name="capitalcontrolador4"/></td>
+          <td><input type="text" class="campostable" name="cpfcnpjcontrolador4"/></td>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomecontrolador6"/></td>
-          <td><input type="text" class="campos" name="capitalcontrolador6"/></td>
-          <td><input type="text" class="campos" name="cpfcnpjcontrolador6"/></td>
+          <td><input type="text" class="campostable" name="nomecontrolador5"/></td>
+          <td><input type="text" class="campostable" name="capitalcontrolador5"/></td>
+          <td><input type="text" class="campostable" name="cpfcnpjcontrolador5"/></td>
+      </tr>
+
+      <tr>
+          <td><input type="text" class="campostable" name="nomecontrolador6"/></td>
+          <td><input type="text" class="campostable" name="capitalcontrolador6"/></td>
+          <td><input type="text" class="campostable" name="cpfcnpjcontrolador6"/></td>
       </tr>
     </table>
 
     <table id="admindiretores">
       <tr>
-        <th>Nome dos Administradores/Diretores</th>
-        <th>Cargo/Função</th>
-        <th>CPF/MF</th>
+        <th id="headadmin">Nome dos Administradores/Diretores</th>
+        <th id="headcargo">Cargo/Função</th>
+        <th id="headcpfadmin">CPF/MF</th>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomeadmin1"/></td>
-          <td><input type="text" class="campos" name="cargofuncao1"/></td>
-          <td><input type="text" class="campos" name="cpfadmin1"/></td>
+          <td><input type="text" class="campostable" name="nomeadmin1"/></td>
+          <td><input type="text" class="campostable" name="cargofuncao1"/></td>
+          <td><input type="text" class="campostable" name="cpfadmin1"/></td>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomeadmin2"/></td>
-          <td><input type="text" class="campos" name="cargofuncao2"/></td>
-          <td><input type="text" class="campos" name="cpfadmin2"/></td>
+          <td><input type="text" class="campostable" name="nomeadmin2"/></td>
+          <td><input type="text" class="campostable" name="cargofuncao2"/></td>
+          <td><input type="text" class="campostable" name="cpfadmin2"/></td>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomeadmin3"/></td>
-          <td><input type="text" class="campos" name="cargofuncao3"/></td>
-          <td><input type="text" class="campos" name="cpfadmin3"/></td>
+          <td><input type="text" class="campostable" name="nomeadmin3"/></td>
+          <td><input type="text" class="campostable" name="cargofuncao3"/></td>
+          <td><input type="text" class="campostable" name="cpfadmin3"/></td>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomeadmin4"/></td>
-          <td><input type="text" class="campos" name="cargofuncao4"/></td>
-          <td><input type="text" class="campos" name="cpfadmin4"/></td>
+          <td><input type="text" class="campostable" name="nomeadmin4"/></td>
+          <td><input type="text" class="campostable" name="cargofuncao4"/></td>
+          <td><input type="text" class="campostable" name="cpfadmin4"/></td>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomeadmin5"/></td>
-          <td><input type="text" class="campos" name="cargofuncao5"/></td>
-          <td><input type="text" class="campos" name="cpfadmin5"/></td>
+          <td><input type="text" class="campostable" name="nomeadmin5"/></td>
+          <td><input type="text" class="campostable" name="cargofuncao5"/></td>
+          <td><input type="text" class="campostable" name="cpfadmin5"/></td>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomeadmin6"/></td>
-          <td><input type="text" class="campos" name="cargofuncao6"/></td>
-          <td><input type="text" class="campos" name="cpfadmin6"/></td>
+          <td><input type="text" class="campostable" name="nomeadmin6"/></td>
+          <td><input type="text" class="campostable" name="cargofuncao6"/></td>
+          <td><input type="text" class="campostable" name="cpfadmin6"/></td>
       </tr>
     </table>
 
     <table id="coligadas">
       <tr>
-        <th>Nome das Controladoras / Controladas / Coligadas</th>
-        <th>% do Capital</th>
-        <th>CNPJ/MF</th>
+        <th id="headnomecontroladoras">Nome das Controladoras / Controladas / Coligadas</th>
+        <th id="headcapitalcontroladoras">% do Capital</th>
+        <th id="headcnpjcontroladoras">CNPJ/MF</th>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomecoligada1"/></td>
-          <td><input type="text" class="campos" name="capitalcoligada1"/></td>
-          <td><input type="text" class="campos" name="cnpjcoligada1"/></td>
+          <td><input type="text" class="campostable" name="nomecoligada1"/></td>
+          <td><input type="text" class="campostable" name="capitalcoligada1"/></td>
+          <td><input type="text" class="campostable" name="cnpjcoligada1"/></td>
       </tr>
 
       <tr>
-          <td><input type="text" class="campos" name="nomecoligada2"/></td>
-          <td><input type="text" class="campos" name="capitalcoligada2"/></td>
-          <td><input type="text" class="campos" name="cnpjcoligada2"/></td>
+          <td><input type="text" class="campostable" name="nomecoligada2"/></td>
+          <td><input type="text" class="campostable" name="capitalcoligada2"/></td>
+          <td><input type="text" class="campostable" name="cnpjcoligada2"/></td>
       </tr>
     </table>
 
+    <div id="pessoasautorizadasemitir" class="titulos">
+      <p>PESSOAS AUTORIZADAS A EMITIR ORDENS</p>
+    </div>
+
     <table id="pessoasautorizadas">
-      <caption><p>PESSOAS AUTORIZADAS A EMITIR ORDENS</p></caption>
       <tr>
-        <th>Nome</th>
-        <th>RG</th>
-        <th>CPF/MF</th>
+        <th id="headnomepessoas">Nome</th>
+        <th id="headrgpessoas">RG</th>
+        <th id="headcpfpessoas">CPF/MF</th>
       </tr>
 
       <tr>
-        <td><input type="text" class="campos" name="pessoautorizada1"/></td>
-        <td><input type="text" class="campos" name="rgpessoaautorizada1"/></td>
-        <td><input type="text" class="campos" name="cpfpessoaautorizada1"/></td>
+        <td><input type="text" class="campostable" name="pessoautorizada1"/></td>
+        <td><input type="text" class="campostable" name="rgpessoaautorizada1"/></td>
+        <td><input type="text" class="campostable" name="cpfpessoaautorizada1"/></td>
       </tr>
 
       <tr>
-        <td><input type="text" class="campos" name="pessoautorizada2"/></td>
-        <td><input type="text" class="campos" name="rgpessoaautorizada2"/></td>
-        <td><input type="text" class="campos" name="cpfpessoaautorizada2"/></td>
+        <td><input type="text" class="campostable" name="pessoautorizada2"/></td>
+        <td><input type="text" class="campostable" name="rgpessoaautorizada2"/></td>
+        <td><input type="text" class="campostable" name="cpfpessoaautorizada2"/></td>
       </tr>
 
       <tr>
-        <td><input type="text" class="campos" name="pessoautorizada3"/></td>
-        <td><input type="text" class="campos" name="rgpessoaautorizada3"/></td>
-        <td><input type="text" class="campos" name="cpfpessoaautorizada3"/></td>
+        <td><input type="text" class="campostable" name="pessoautorizada3"/></td>
+        <td><input type="text" class="campostable" name="rgpessoaautorizada3"/></td>
+        <td><input type="text" class="campostable" name="cpfpessoaautorizada3"/></td>
       </tr>
 
       <tr>
-        <td><input type="text" class="campos" name="pessoautorizada4"/></td>
-        <td><input type="text" class="campos" name="rgpessoaautorizada4"/></td>
-        <td><input type="text" class="campos" name="cpfpessoaautorizada4"/></td>
+        <td><input type="text" class="campostable" name="pessoautorizada4"/></td>
+        <td><input type="text" class="campostable" name="rgpessoaautorizada4"/></td>
+        <td><input type="text" class="campostable" name="cpfpessoaautorizada4"/></td>
       </tr>
 
       <tr>
-        <td><input type="text" class="campos" name="pessoautorizada5"/></td>
-        <td><input type="text" class="campos" name="rgpessoaautorizada5"/></td>
-        <td><input type="text" class="campos" name="cpfpessoaautorizada5"/></td>
+        <td><input type="text" class="campostable" name="pessoautorizada5"/></td>
+        <td><input type="text" class="campostable" name="rgpessoaautorizada5"/></td>
+        <td><input type="text" class="campostable" name="cpfpessoaautorizada5"/></td>
       </tr>
 
       <tr>
-        <td><input type="text" class="campos" name="pessoautorizada6"/></td>
-        <td><input type="text" class="campos" name="rgpessoaautorizada6"/></td>
-        <td><input type="text" class="campos" name="cpfpessoaautorizada6"/></td>
+        <td><input type="text" class="campostable" name="pessoautorizada6"/></td>
+        <td><input type="text" class="campostable" name="rgpessoaautorizada6"/></td>
+        <td><input type="text" class="campostable" name="cpfpessoaautorizada6"/></td>
       </tr>
 
       <tr>
-        <td><input type="text" class="campos" name="pessoautorizada7"/></td>
-        <td><input type="text" class="campos" name="rgpessoaautorizada7"/></td>
-        <td><input type="text" class="campos" name="cpfpessoaautorizada7"/></td>
+        <td><input type="text" class="campostable" name="pessoautorizada7"/></td>
+        <td><input type="text" class="campostable" name="rgpessoaautorizada7"/></td>
+        <td><input type="text" class="campostable" name="cpfpessoaautorizada7"/></td>
       </tr>
     </table>
 
     <div id="assinaturaspag1">
-      <input type="text" id="inputassinatura1pag1"class="campos"/>
-      <input type="text" id="inputassinatura2pag1"class="campos"/>
+      <label>1.</label><input type="text" id="inputassinatura1pag1" class="campos"/>
+      <label>2.</label><input type="text" id="inputassinatura2pag1" class="campos"/>
     </div>
 
-      <table id="cabecalho2" border="1" class="cabecalhos">
+      <table id="tabelacabecalho2" border="1" class="cabecalhos">
         <tr>
           <td id="logo2"><img id="logocabecalho" src="_imagens/logo_33_lerosa.png"/></td>
           <td id="dadoslerosa2"><p id="paragrafodados2">Lerosa S/A Corretora de Valores e Câmbio<br />
@@ -341,14 +355,14 @@
             Ouvidoria 0800 727 791 <br />
             Tel: 3513 - 6600 Fax: 3513 - 6601 <br />
             e-mail: <a href="mailto:lerosa@lerosa.com.br">lerosa@lerosa.com.br</a></p></td>
-            <td id="declaracoesdocliente"><p>FICHA CADASTRAL PESSOA JURÍDICA</p></td>
+            <td id="fichacadastral2"><p>FICHA CADASTRAL PESSOA JURÍDICA</p></td>
         </tr>
       </table>
 
     <div id="opcaoenviofisico">
       <p>Opção para Envio de Correspondência - Meio Físico</p>
-      <label>Endereço Sede<input type="checkbox" name="enderecosede"/></label>
-      <label><input type="text" name="enderecoopcional"/></label>
+      <label id="labelenderecosede">Endereço Sede<input type="checkbox" name="enderecosede"/></label>
+      <label id="labelenderecoopcional">Endereço (opcional)<input id="inputenderecoopicional" class="campos" type="text" name="enderecoopcional"/></label>
     </div>
 
     <table border="1" id="opcaoenvioeletronico">
@@ -372,24 +386,24 @@
           <th>N° Conta e Dígito</th>
         </tr>
         <tr>
-          <td><input type="text" class="campos" name="nomebanco1"/></td>
-          <td><input type="text" class="campos" name="numerobanco1"/></td>
-          <td><input type="text" class="campos" name="numeroagencia1"/></td>
-          <td><input type="text" class="campos" name="numeroconta1"/></td>
+          <td><input type="text" class="campostable" name="nomebanco1"/></td>
+          <td><input type="text" class="campostable" name="numerobanco1"/></td>
+          <td><input type="text" class="campostable" name="numeroagencia1"/></td>
+          <td><input type="text" class="campostable" name="numeroconta1"/></td>
         </tr>
 
         <tr>
-          <td><input type="text" class="campos" name="nomebanco2"/></td>
-          <td><input type="text" class="campos" name="numerobanco2"/></td>
-          <td><input type="text" class="campos" name="numeroagencia2"/></td>
-          <td><input type="text" class="campos" name="numeroconta2"/></td>
+          <td><input type="text" class="campostable" name="nomebanco2"/></td>
+          <td><input type="text" class="campostable" name="numerobanco2"/></td>
+          <td><input type="text" class="campostable" name="numeroagencia2"/></td>
+          <td><input type="text" class="campostable" name="numeroconta2"/></td>
         </tr>
 
         <tr>
-          <td><input type="text" class="campos" name="nomebanco3"/></td>
-          <td><input type="text" class="campos" name="numerobanco3"/></td>
-          <td><input type="text" class="campos" name="numeroagencia3"/></td>
-          <td><input type="text" class="campos" name="numeroconta3"/></td>
+          <td><input type="text" class="campostable" name="nomebanco3"/></td>
+          <td><input type="text" class="campostable" name="numerobanco3"/></td>
+          <td><input type="text" class="campostable" name="numeroagencia3"/></td>
+          <td><input type="text" class="campostable" name="numeroconta3"/></td>
         </tr>
     </table>
 
@@ -503,6 +517,6 @@
     <div id="data">
       <label><input class="campos" id="inputdata" onkeypress="mascara(this, '##/##/####');" maxlength="10" type="text" name="data"/>Data</label>
     </div>
-
+  </section>
   </body>
 </html>
