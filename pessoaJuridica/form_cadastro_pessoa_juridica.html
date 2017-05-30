@@ -366,7 +366,9 @@
     </div>
 
     <table border="1" id="opcaoenvioeletronico">
-        <caption><p>Opção para Envio de Correspondência - Meio Eletrônico</p></caption>
+      <tr>
+        <th id="tituloenvioeletronico" colspan="3">Opção para Envio de Correspondência - Meio Eletrônico</th>
+      </tr>
       <tr>
         <td><p>Autorizo a LEROSA enviar por e-mail extratos e demais informações</p>
         <p><label><input type="radio" name="autorizaemail" value="sim"/>Sim</label><label><input type="radio" name="autorizaemail" value="nao">Não</label></p></td>
@@ -378,7 +380,7 @@
     </table>
 
     <table border="1" id="bancoscontasliquidacao">
-        <caption><p>BANCOS E CONTAS-CORRENTES PARA LIQUIDAÇÃO FINANCEIRA</p></caption>
+        <th id="titulocontasliquidacao" colspan="4">BANCOS E CONTAS-CORRENTES PARA LIQUIDAÇÃO FINANCEIRA</th>
         <tr>
           <th>Nome do Banco</th>
           <th>N° Banco</th>
@@ -408,22 +410,22 @@
     </table>
 
     <table border="1" id="situacaopatrimonial">
-      <caption><p>SITUAÇÃO PATRIMONIAL</p></caption>
+      <th id="titulosituacaopatrimonial" colspan="2">SITUAÇÃO PATRIMONIAL</th>
       <tr>
         <th>Tipo</th>
         <th>Valor Total</th>
       </tr>
       <tr>
         <td>Patrimônio Líquido</td>
-        <td><input type="text" name="patimonioliquido"/></td>
+        <td><input type="text" class="campostable" name="patimonioliquido"/></td>
       </tr>
       <tr>
         <td>Capital Social</td>
-        <td><input type="text" name="capitalsocial"/></td>
+        <td><input type="text" class="campostable" name="capitalsocial"/></td>
       </tr>
       <tr>
         <td>Faturamento Médio Mensal dos Últimos 12 Meses</td>
-        <td><input type="text" name="faturamentomensal"/></td>
+        <td><input type="text" class="campostable" name="faturamentomensal"/></td>
       </tr>
     </table>
 

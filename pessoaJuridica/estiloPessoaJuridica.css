@@ -495,7 +495,7 @@ select {
 #opcaoenviofisico {
   border: 1px solid;
   border-color: black;
-  width: 96%;
+  width: 93%;
   margin-top: 2%;
   margin-left: 2%;
 }
@@ -517,4 +517,55 @@ select {
   width: 60%;
   margin-left: 1%;
   margin-bottom: 1%;
+}
+
+#opcaoenvioeletronico {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: 0.5%;
+  margin-top: 3%;
+  width: 93%;
+  margin-left: 2%;
+}
+
+#tituloenvioeletronico {
+  text-align: left;
+  background-color: #c2c1c1;
+  padding-left: 1%;
+}
+
+#opcaoenvioeletronico td {
+  text-align: center;
+  font-size: 17px;
+}
+
+#bancoscontasliquidacao {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: 0.5%;
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+#titulocontasliquidacao {
+  background-color: #c2c1c1;
+}
+
+#bancoscontasliquidacao th {
+  text-align: left;
+}
+
+#situacaopatrimonial {
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: 0.5%;
+  width: 93%;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+#titulosituacaopatrimonial {
+  background-color: #c2c1c1;
+  text-align: left;
 }
