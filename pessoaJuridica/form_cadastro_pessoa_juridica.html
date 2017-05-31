@@ -430,7 +430,7 @@
     </table>
 
     <div id="declaracoes">
-      <p>Declarações</p>
+      <p id="paragrafodeclaracoes">Declarações:</p>
         <ol>
           <li>Operamos por conta Própria? <label><input type="radio" name="contapropria" value="sim"/>SIM</label><label><input type="radio" name="contapropria" value="nao">NÃO</label></li>
           <li>Autorizamos a transmissão de ordens por procurador ou representante?<label><input type="radio" name="procurador" value="nao">NÃO</label><label><input type="radio" name="procurador" value="sim"/>SIM</label><b> (Se sim, preencher a ficha de identificação de procurador)</b>. Em caso de eventual revogação do mandato comprometo-me a informar à Corretora.</li>
@@ -445,8 +445,8 @@
           <li>Mediante este documento, aderimos aos termos do contrato de prestação de serviços de Custódia Fungível de Ativos da CBLC, firmado por esta Corretora, outorgando à CBLC poderes para, na qualidade de proprietário fiduciário, transferir para seu nome, nas companhias emitentes, os ativos de minha propriedade.</li>
 
         <div id="assinaturaspag2">
-          <input id="inputassinatura1pag2" type="text"/>
-          <input id="inputassinatura2pag2" type="text"/>
+          <input id="inputassinatura1pag2" class="campos" type="text"/>
+          <input id="inputassinatura2pag2" class="campos" type="text"/>
         </div>
 
         <div id="cabecalho3">
@@ -484,12 +484,12 @@
       <label><input class="campos" id="inputdata" onkeypress="mascara(this, '##/##/####');" maxlength="10" type="text" name="data"/>Data</label>
     </div>
 
-    <center id="assinaturas">
+    <div id="assinaturaspag3">
       <label for="ass1">1.</label>
-      <input class="assinatura" type="text" name="ass1"/>
+      <input class="campos" type="text" name="ass1"/>
       <label id="ass2" for="ass2">2.</label>
-      <input class="assinatura" type="text" name="ass2"/>
-    </center>
+      <input class="campos" type="text" name="ass2"/>
+    </div>
 
     <div id="obs">
       <p>Obs.: A Ficha cadastral deve ter anexa as cópias dos documentos:</p>
@@ -512,13 +512,18 @@
       <label><input type="text" name="assinaturalerosa" class="campos"/><b>Lerosa S/A Corretora de Valores e Câmbio</b><br/>Assinatura do responsável pelo cadastro</label>
     </div>
 
-    <div id="local">
+    <div id="locallerosa">
       <label><input class="campos" id="inputlocal" type="text" name="local"/>Local</label>
     </div>
 
-    <div id="data">
+    <div id="datalerosa">
       <label><input class="campos" id="inputdata" onkeypress="mascara(this, '##/##/####');" maxlength="10" type="text" name="data"/>Data</label>
     </div>
+
+    <div id="botaoimprimir">
+      <button id="imprimir" type="button" name="botaoimprimir">Imprimir</button>
+    </div>
+
   </section>
   </body>
 </html>
